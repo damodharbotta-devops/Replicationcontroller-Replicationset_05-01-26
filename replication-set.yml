@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myrs
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: swiggy
+  template:
+    metadata:
+      name: ugadi
+      labels:
+        app: swiggy
+    spec:
+      containers:
+        - name: cont2
+          image: shaikmustafa/cycle
+          ports:
+            - containerPort: 80     
+
+
