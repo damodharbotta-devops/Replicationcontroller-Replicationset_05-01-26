@@ -2,8 +2,8 @@
 # Replicationcontroller-Replicationset_05-01-26
 
 ## Commands:
-  kubectl create -f replication-controller.yml
-  kubectl get po
+  kubectl create -f replication-controller.yml /
+  kubectl get po /
   kubectl get po -o wide
   kubectl get po --show-labels
   kubectl describe pod podname
